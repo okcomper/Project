@@ -1,4 +1,4 @@
-package dev.market.model;
+package dev.auction.market.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
