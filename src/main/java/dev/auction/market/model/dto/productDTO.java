@@ -9,7 +9,7 @@ import dev.auction.market.model.entity.Product;
 @Setter
 @NoArgsConstructor
 
-public class productDTO {
+public class ProductDTO {
 
     private Long productId;
     private String productName;
@@ -17,10 +17,11 @@ public class productDTO {
     private String description;
     private String uniqueId;   //user.java에서 기본키 받아옴.
     
-    public productDTO(Product product) {
+    public ProductDTO(Product product) {
         this.productId = product.getProductId();
         this.productName = product.getProductName();
         this.productCost = product.getProductCost();
-        
+        this.description = product.getDescription();
+        this.uniqueId = product.getUniqueId();
     }
 }
